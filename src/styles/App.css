@@ -1,0 +1,16 @@
+.App {
+  background-color: #FFFFFF;
+}
+.App .App-header {
+  padding: 17px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .App-header .App-nav {
+  display: flex;
+  gap: 57px;
+  align-items: center;
+  color: #000000;
+  font-weight: bold;
+}/*# sourceMappingURL=App.css.map */

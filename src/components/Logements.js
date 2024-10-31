@@ -1,4 +1,4 @@
-import "../styles/Logements.css";
+import "../styles/Logements.scss";
 
 function Logement() {}
 

@@ -1,0 +1,94 @@
+$main_color:#FF6060;
+$secondary_color:#000000;
+$tertiary_color:#FFFFFF;
+$bg_color:#F6F6F6;
+$main_font: "Montserrat";
+
+.App {
+ background-color: $tertiary_color;
+ .App-header {
+    padding : 17px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .App-nav {
+        display: flex;
+        gap: 57px;
+        align-items: center;
+        .link{
+            color : $secondary_color;
+            font-weight: bold;
+        }
+    }
+}
+.App-main {
+    .Main-header {
+        height: 223px;
+        margin : 17px 100px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)), url("../assets/imgBg1.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+
+        .Main-title {
+           font-family: $main_font;
+            font-size: 48px;
+            color: $tertiary_color;
+            font-weight: bold;
+        }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 100px;
+        padding: 50px;
+        gap: 50px;
+        background-color: $bg_color;
+        border-radius: 10px;
+        .card {
+            max-width: 30%;
+            height: 340px;
+            border-radius: 10px;
+            position: relative;
+            flex: 1 1 30%;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+
+            .bgCard {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                filter: brightness(50%);
+            }
+            .locationTitle {
+                font-family: $main_font;
+                font-size: 18px;
+                font-weight: bold;
+                color: $tertiary_color;
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                text-overflow: ellipsis;
+                width: 250px;
+            }
+        }
+    }
+}
+.App-footer {
+    background-color: $secondary_color;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $tertiary_color;
+    font-family: $main_font;
+    font-size: 24px;
+}
+}
+

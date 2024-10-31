@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/index.css";
+import "./styles/index.scss";
 import App from "./components/App.js";
 import Error from "./components/Error.js";
 import Infos from "./components/Infos.js";
@@ -14,9 +14,9 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/" element={<Error />} />
-        <Route path="/" element={<Infos />} />
-        <Route path="/" element={<Logement />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="/infos" element={<Infos />} />
+        <Route path="/logement" element={<Logement />} />
       </Routes>
     </Router>
   </React.StrictMode>
