@@ -15,9 +15,18 @@ $main_font: "Montserrat";
         display: flex;
         gap: 57px;
         align-items: center;
-        .link{
+        .active-link {
             color : $secondary_color;
             font-weight: bold;
+            font-size: 24px;
+            text-decoration: underline;
+      
+        }
+        .link {
+            color : $secondary_color;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
         }
     }
 }
@@ -81,7 +90,7 @@ $main_font: "Montserrat";
 }
 .App-footer {
     background-color: $secondary_color;
-    padding: 20px 0px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;

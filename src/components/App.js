@@ -13,7 +13,11 @@ function App() {
       </header>
 
       <main className="App-main">
-        <Banners />
+        <Banners
+          title="Chez vous, partout et ailleurs"
+          className="Main-header"
+          showTitle={true}
+        />
         <div className="cards">
           {locationData.map((items, index) => (
             <div className="card" key={index}>

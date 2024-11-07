@@ -11,6 +11,72 @@
   display: flex;
   gap: 57px;
   align-items: center;
+}
+.App .App-header .App-nav .link {
   color: #000000;
   font-weight: bold;
+}
+.App .App-main .Main-header {
+  height: 223px;
+  margin: 17px 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/imgBg1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+.App .App-main .Main-header .Main-title {
+  font-family: "Montserrat";
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.App .App-main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 100px;
+  padding: 50px;
+  gap: 50px;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+}
+.App .App-main .cards .card {
+  max-width: 30%;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  flex: 1 1 30%;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+}
+.App .App-main .cards .card .bgCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(50%);
+}
+.App .App-main .cards .card .locationTitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  text-overflow: ellipsis;
+  width: 250px;
+}
+.App .App-footer {
+  background-color: #000000;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 24px;
 }/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,5 @@
+{
+    "autoimport.filesToScan": "**/*.{ts,tsx,js,jsx}",
+    "prettier.requireConfig": false,
+    "prettier.singleAttributePerLine": true
+}

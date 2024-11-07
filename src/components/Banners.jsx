@@ -1,7 +1,7 @@
-export default function Banners() {
+export default function Banners({title, showTitle=true, className}) {
     return (
-        <section className="Main-header">
-        <h1 className="Main-title">Chez vous, partout et ailleurs</h1>
-      </section>
+        <div className={className}>
+        {showTitle && <h1 className="Main-title">{title}</h1>}
+      </div>
     )
 }
