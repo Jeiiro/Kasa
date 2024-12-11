@@ -1,9 +1,11 @@
-import "../styles/App.scss";
-import Banners from "../components/Banners";
-import Cards from "../components/Cards";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import locationData from "../kasaData.json";
+import '../styles/App.scss';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Banners from '../components/Banners';
+import Cards from '../components/Cards';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import locationData from '../kasaData.json';
 
 function App() {
   return (
@@ -19,10 +21,14 @@ function App() {
           showTitle={true}
         />
         <div className="cards">
-          {locationData.map((items, index) => (
-            <div className="card" key={index}>
+          {locationData.map((items) => (
+            <Link
+              to={`/logement/${items.id}`}
+              className="card"
+              key={items.id}
+            >
               <Cards data={items} />
-            </div>
+            </Link>
           ))}
         </div>
       </main>

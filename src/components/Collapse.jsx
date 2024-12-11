@@ -9,7 +9,7 @@ export default function Collapse({title, content}) {
         <div className="Collapse">
             <div className="Collapse-header" onClick={toggleCollapse}>           
                  <h2>{title}</h2> 
-                 {isOpen? <img src={arrowUp} alt="arrow up" /> : <img src={arrowBack} alt="arrow back" />}
+                 {isOpen? <img src={arrowBack} alt="arrow back"  /> :  <img src={arrowUp} alt="arrow up"/>}
             </div>
             {isOpen && <div className="Collapse-content">{content}</div>  }
         </div>

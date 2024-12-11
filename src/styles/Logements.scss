@@ -1,3 +1,215 @@
 $main_color:#FF6060;
 $secondary_color:#000000;
 $tertiary_color:#FFFFFF;
+$star_color:#E3E3E3;
+$bg_color:#F6F6F6;
+$main_font: "Montserrat";
+
+
+.Housing-details {
+    background-color: $tertiary_color;
+
+ .Housing-header {
+    padding : 17px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .App-nav {
+        display: flex;
+        gap: 57px;
+        align-items: center;
+        .active-link{
+            color : $secondary_color;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+        .link {         
+            color : $secondary_color;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    }
+}
+.Housing-main {
+
+    padding: 17px 100px;
+
+    .carousel {
+
+        height: 415px;
+        position: relative;
+        overflow: hidden;
+
+        .carousel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 96px;
+            color: white;
+            cursor: pointer;
+            z-index: 10;
+        
+            &.carousel-arrow-left {
+              left: 10px;
+            }
+        
+            &.carousel-arrow-right {
+              right: 10px;
+            }
+          }
+        .carousel-counter {
+            position : absolute;
+            bottom: 10px;
+            transform: translateY(-50%);
+            left : 50%;
+            font-size: 18px;
+            color: $tertiary_color;
+        }
+    }
+    .Housing-infos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        margin: 16px 0px ;
+
+        div {
+            flex: 0 1 calc(50% - 8px);
+            box-sizing: border-box;
+        }
+
+        .title-location {
+            font-family: $main_font;
+            margin-top: 30px;
+            
+
+            h1 {
+               font-weight: 500;
+                font-size: 36px; 
+                color: $main_color;
+                margin: auto;
+            }
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                color: $secondary_color;
+                margin: auto;
+            }
+        }
+        .host-info {
+            font-family: $main_font;
+            font-size: 18px;
+            color: $main_color;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-end;
+
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+        }
+        .tags {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-start;
+
+            .tag {
+                background-color: $main_color;
+                color: $tertiary_color;
+                padding: 5px 25px;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .star {
+                font-size: 28px;
+                color: $star_color;
+    
+            }
+            .star.filled {
+                color: $main_color;
+            }
+
+        }
+
+    }
+    .Housing-collapse {
+        display: flex;
+        gap: 76px;
+        margin: 16px 0px;
+
+        .Collapse {
+            width: 100%;
+            .Collapse-header {
+                display: flex;
+                align-items: center;
+                font-family: $main_font;
+                background-color: $main_color;
+                border-radius: 5px;
+                padding: 0px 20px;
+                justify-content: space-between;
+                
+                
+                h2 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $tertiary_color;
+                }
+                img {
+                    color: $tertiary_color;
+                    height: 32px;
+                    width: 32px;
+                    cursor: pointer;
+                }
+            }
+            .Collapse-content {
+                margin: 32px;
+                font-family: $main_font;
+                font-size: 18px;
+                font-weight: 400;
+
+                ul {
+                    list-style-type: none;
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+        }
+
+    }
+}
+.Housing-footer {
+    background-color: $secondary_color;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $tertiary_color;
+    font-family: $main_font;
+    font-size: 24px;
+}
+}

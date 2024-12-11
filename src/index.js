@@ -13,10 +13,22 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/error" element={<Error />} />
-        <Route path="/infos" element={<Infos />} />
-        <Route path="/logement" element={<Logement />} />
+        <Route
+          path="/"
+          element={<App />}
+        />
+        <Route
+          path="*"
+          element={<Error />}
+        />
+        <Route
+          path="/infos"
+          element={<Infos />}
+        />
+        <Route
+          path="/logement/:id"
+          element={<Logement />}
+        />
       </Routes>
     </Router>
   </React.StrictMode>
