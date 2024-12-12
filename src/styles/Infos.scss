@@ -4,7 +4,197 @@ $tertiary_color:#FFFFFF;
 $bg_color:#F6F6F6;
 $main_font: "Montserrat";
 
+@media only screen and (max-width: 768px) {
+    .Infos {
+        background-color: $tertiary_color;
+    
+     .Infos-header {
+        padding : 17px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .App-logo {
+            width: 145px;
+           }
+        .App-nav {
+            display: flex;
+            gap: 26px;
+            align-items: center;
+            .active-link{
+                color : $secondary_color;
+                font-weight: 500;
+                font-size: 12px;
+                text-decoration: underline;
+            }
+            .link {         
+                color : $secondary_color;
+                font-weight: 500;
+                font-size: 12px;
+                text-decoration: none;
+            }
+        }
+    }
+    .Infos-main {
+        .MainInfos-header {
+            height: 150px;
+            margin : 17px 25px ;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.4)), url("../assets/imgBg2.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .Collapse-container {
+            padding : 17px 25px 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+       
+            .Collapse {
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+                gap: 20px;
+                .Collapse-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $main_color;
+                    color: $tertiary_color;
+                    border-radius: 15px;
+                    padding: 0px 30px;
+                    font-weight: bold;
+                    font-family: $main_font;
+                    height: 54px;
+                    img {
+                        color : $tertiary_color;
+                        cursor: pointer;
+                    }
+                }
+                .Collapse-content {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 10px;
+                    font-family: $main_font;
+                    font-size: 12px;
+                }
+            }
+        }
+    
+    }
+    .Infos-footer {
+        background-color: $secondary_color;
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $tertiary_color;
+        font-family: $main_font;
+        font-size: 12px;
+    }
+    }}
 
+@media only screen and (min-width: 769px) {
+    .Infos {
+        background-color: $tertiary_color;
+    
+     .Infos-header {
+        padding : 17px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .App-logo {
+            width: 145px;
+           }
+        .App-nav {
+            display: flex;
+            gap: 26px;
+            align-items: center;
+            .active-link{
+                color : $secondary_color;
+                font-weight: 500;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+            .link {         
+                color : $secondary_color;
+                font-weight: 500;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+    .Infos-main {
+        .MainInfos-header {
+            height: 185px;
+            margin : 17px 50px ;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.4)), url("../assets/imgBg2.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        .Collapse-container {
+            padding : 17px 50px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+       
+            .Collapse {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0px;
+                .Collapse-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $main_color;
+                    color: $tertiary_color;
+                    border-radius: 5px;
+                    padding: 0px 30px;
+                    font-weight: bold;
+                    font-family: $main_font;
+                    height: 54px;
+                    img {
+                        color : $tertiary_color;
+                        cursor: pointer;
+                    }
+                }
+                .Collapse-content {
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 35px;
+                    font-family: $main_font;
+                    font-size: 16px;
+                }
+            }
+        }
+    
+    }
+    .Infos-footer {
+        background-color: $secondary_color;
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $tertiary_color;
+        font-family: $main_font;
+        font-size: 24px;
+    }
+    }}
+
+@media only screen and (min-width: 992px) {
 .Infos {
     background-color: $tertiary_color;
 
@@ -94,4 +284,4 @@ $main_font: "Montserrat";
     font-family: $main_font;
     font-size: 24px;
 }
-}
+}}

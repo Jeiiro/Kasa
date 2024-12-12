@@ -4,6 +4,153 @@ $tertiary_color:#FFFFFF;
 $bg_color:#F6F6F6;
 $main_font: "Montserrat";
 
+@media only screen and (max-width: 768px) {
+    .Error {
+    background-color: $tertiary_color;
+
+ .Error-header {
+    padding : 17px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .App-logo {
+        width: 145px;
+       }
+    .App-nav {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .active-link{
+            color : $secondary_color;
+            font-weight: 500;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+        .link {         
+            color : $secondary_color;
+            font-weight: 500;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+}
+.Error-main {
+
+    .error-boundary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap : 96px;
+        align-items: center;
+        padding: 80px 0px;
+         h1 {
+        font-family: $main_font;
+        font-size: 126px;
+        color: $main_color;
+        margin: 0;
+        }
+        p {
+        font-family: $main_font;
+        font-size: 24px;
+        color: $main_color;
+       text-align: center;
+       margin: 25px;
+     }
+     .link {
+        font-family: $main_font;
+        font-size: 16px;
+        color: $secondary_color;
+        text-decoration: underline;
+ 
+    }
+}
+}
+.Error-footer {
+    background-color: $secondary_color;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $tertiary_color;
+    font-family: $main_font;
+    font-size: 12px;
+}
+}}
+
+@media only screen and (min-width: 769px) {
+    .Error {
+    background-color: $tertiary_color;
+
+ .Error-header {
+    padding : 17px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .App-logo {
+        width: 145px;
+       }
+    .App-nav {
+        display: flex;
+        gap: 57px;
+        align-items: center;
+        .active-link{
+            color : $secondary_color;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        .link {         
+            color : $secondary_color;
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    }
+}
+.Error-main {
+
+    .error-boundary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap : 90px;
+        align-items: center;
+        padding: 50px 0px;
+         h1 {
+        font-family: $main_font;
+        font-size: 180px;
+        color: $main_color;
+        margin: 0;
+        }
+        p {
+        font-family: $main_font;
+        font-size: 28px;
+        color: $main_color;
+     }
+     .link {
+        font-family: $main_font;
+        font-size: 16px;
+        color: $secondary_color;
+        text-decoration: underline;
+ 
+    }
+}
+}
+.Error-footer {
+    background-color: $secondary_color;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $tertiary_color;
+    font-family: $main_font;
+    font-size: 12px;
+}
+}}
+
+@media only screen and (min-width: 992px) {
 .Error {
     background-color: $tertiary_color;
 
@@ -70,4 +217,4 @@ $main_font: "Montserrat";
     font-family: $main_font;
     font-size: 24px;
 }
-}
+}}
