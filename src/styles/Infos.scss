@@ -4,15 +4,29 @@ $tertiary_color:#FFFFFF;
 $bg_color:#F6F6F6;
 $main_font: "Montserrat";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+#root {
+    min-height: 100vh;
+}
+
 @media only screen and (max-width: 768px) {
     .Infos {
         background-color: $tertiary_color;
+        min-height: 100vh;
     
      .Infos-header {
         padding : 17px 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-height: 10vh;
         .App-logo {
             width: 145px;
            }
@@ -35,9 +49,10 @@ $main_font: "Montserrat";
         }
     }
     .Infos-main {
+        min-height: 70vh;
         .MainInfos-header {
             height: 150px;
-            margin : 17px 25px ;
+            margin : 0px 25px ;
             background-image: linear-gradient(rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.4)), url("../assets/imgBg2.svg");
             background-position: center;
@@ -49,10 +64,10 @@ $main_font: "Montserrat";
             border-radius: 10px;
         }
         .Collapse-container {
-            padding : 17px 25px 70px;
+            padding : 17px 25px 50px;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 50px;
        
             .Collapse {
                 display: flex;
@@ -88,7 +103,7 @@ $main_font: "Montserrat";
     }
     .Infos-footer {
         background-color: $secondary_color;
-        padding: 50px 0px;
+        padding: 100px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -96,18 +111,21 @@ $main_font: "Montserrat";
         color: $tertiary_color;
         font-family: $main_font;
         font-size: 12px;
+        min-height: 20vh;
     }
     }}
 
 @media only screen and (min-width: 769px) {
     .Infos {
         background-color: $tertiary_color;
+        min-height: 100vh;
     
      .Infos-header {
-        padding : 17px 50px;
+        padding : 30px 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        min-height: 10vh;
         .App-logo {
             width: 145px;
            }
@@ -130,9 +148,10 @@ $main_font: "Montserrat";
         }
     }
     .Infos-main {
+        min-height: 70vh;
         .MainInfos-header {
             height: 185px;
-            margin : 17px 50px ;
+            margin : 36px 50px ;
             background-image: linear-gradient(rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.4)), url("../assets/imgBg2.svg");
             background-position: center;
@@ -144,10 +163,10 @@ $main_font: "Montserrat";
             border-radius: 15px;
         }
         .Collapse-container {
-            padding : 17px 50px 50px;
+            padding : 50px 50px 70px;
             display: flex;
             flex-direction: column;
-            gap: 35px;
+            gap: 50px;
        
             .Collapse {
                 display: flex;
@@ -183,7 +202,7 @@ $main_font: "Montserrat";
     }
     .Infos-footer {
         background-color: $secondary_color;
-        padding: 50px 0px;
+        padding: 100px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -191,18 +210,20 @@ $main_font: "Montserrat";
         color: $tertiary_color;
         font-family: $main_font;
         font-size: 24px;
+        min-height: 20vh;
     }
     }}
 
 @media only screen and (min-width: 992px) {
 .Infos {
     background-color: $tertiary_color;
-
+    min-height: 100vh;
  .Infos-header {
     padding : 17px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;
     .App-nav {
         display: flex;
         gap: 57px;
@@ -222,6 +243,7 @@ $main_font: "Montserrat";
     }
 }
 .Infos-main {
+    min-height: 70vh;
     .MainInfos-header {
         height: 223px;
         margin : 17px 100px ;
@@ -283,5 +305,6 @@ $main_font: "Montserrat";
     color: $tertiary_color;
     font-family: $main_font;
     font-size: 24px;
+    min-height: 20vh;
 }
 }}

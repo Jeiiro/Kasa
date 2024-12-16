@@ -4,15 +4,28 @@ $tertiary_color:#FFFFFF;
 $bg_color:#F6F6F6;
 $main_font: "Montserrat";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+#root {
+    min-height: 100vh;
+}
+
 @media only screen and (max-width: 768px) {
     .Error {
     background-color: $tertiary_color;
-
+    min-height: 100vh;
  .Error-header {
     padding : 17px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;
     .App-logo {
         width: 145px;
        }
@@ -35,14 +48,14 @@ $main_font: "Montserrat";
     }
 }
 .Error-main {
-
+    min-height: 70vh;
     .error-boundary {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap : 96px;
+        gap : 50px;
         align-items: center;
-        padding: 80px 0px;
+        padding: 50px 0px;
          h1 {
         font-family: $main_font;
         font-size: 126px;
@@ -75,18 +88,20 @@ $main_font: "Montserrat";
     color: $tertiary_color;
     font-family: $main_font;
     font-size: 12px;
+    min-height: 20vh;
 }
 }}
 
 @media only screen and (min-width: 769px) {
     .Error {
     background-color: $tertiary_color;
-
+        min-height: 100vh;
  .Error-header {
     padding : 17px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;
     .App-logo {
         width: 145px;
        }
@@ -109,7 +124,7 @@ $main_font: "Montserrat";
     }
 }
 .Error-main {
-
+    min-height: 70vh;
     .error-boundary {
         display: flex;
         flex-direction: column;
@@ -147,6 +162,7 @@ $main_font: "Montserrat";
     color: $tertiary_color;
     font-family: $main_font;
     font-size: 12px;
+    min-height: 20vh;
 }
 }}
 
@@ -159,6 +175,7 @@ $main_font: "Montserrat";
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;
     .App-nav {
         display: flex;
         gap: 57px;
@@ -178,7 +195,7 @@ $main_font: "Montserrat";
     }
 }
 .Error-main {
-
+    min-height: 70vh;
     .error-boundary {
         display: flex;
         flex-direction: column;
@@ -216,5 +233,6 @@ $main_font: "Montserrat";
     color: $tertiary_color;
     font-family: $main_font;
     font-size: 24px;
+    min-height: 20vh;
 }
 }}

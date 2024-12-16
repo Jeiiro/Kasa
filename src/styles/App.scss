@@ -4,16 +4,26 @@ $tertiary_color:#FFFFFF;
 $bg_color:#F6F6F6;
 $main_font: "Montserrat";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
 
 
 @media only screen and (max-width: 768px) {
     .App {
         background-color: $tertiary_color;
+        min-height: 100vh;
         .App-header {
            padding : 17px 30px;
            display: flex;
            justify-content: space-between;
            align-items: center;
+           min-height: 10vh;
            .App-logo {
             width: 145px;
            }
@@ -37,6 +47,7 @@ $main_font: "Montserrat";
            }
        }
        .App-main {
+        min-height: 70vh;
            .Main-header {
                height: 111px;
                margin : 17px 30px;
@@ -106,6 +117,7 @@ $main_font: "Montserrat";
            color: $tertiary_color;
            font-family: $main_font;
            font-size: 12px;
+           min-height: 20vh;
        }
        }
 }
@@ -115,11 +127,13 @@ $main_font: "Montserrat";
 @media only screen and (min-width: 769px) {
     .App {
         background-color: $tertiary_color;
+        min-height: 100vh;
         .App-header {
            padding : 17px 50px;
            display: flex;
            justify-content: space-between;
            align-items: center;
+           min-height: 10vh;
            .App-logo {
             width: 145px;
            }
@@ -143,6 +157,7 @@ $main_font: "Montserrat";
            }
        }
        .App-main {
+            min-height: 70vh;
            .Main-header {
                height: 165px;
                margin : 17px 50px;
@@ -167,7 +182,6 @@ $main_font: "Montserrat";
            .cards {
                display: flex;
                flex-wrap: wrap;
-                flex-direction: unset;
                justify-content: center;
                margin: 30px 50px;
                padding: 25px;
@@ -175,15 +189,14 @@ $main_font: "Montserrat";
                border-radius: 10px;
                gap: 20px;
                .card {
-                    max-width: none;
+                    max-width: 45%;
                    height: 255px;
                    border-radius: 10px;
                    position: relative;
-                    flex: 1 1 35%;
                    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
        
                    .bgCard {
-                       width: 100%;
+                        width: 100%;
                        height: 100%;
                        border-radius: 10px;
                        filter: brightness(50%);
@@ -194,10 +207,10 @@ $main_font: "Montserrat";
                        font-weight: bold;
                        color: $tertiary_color;
                        position: absolute;
-                       bottom: 5px;
-                       left: 15px;
+                       bottom: 1px;
+                       left: 1px;
                        text-overflow: ellipsis;
-                       width: 250px;
+                       padding : 0px 15px;
                    }
                }
            }
@@ -212,6 +225,7 @@ $main_font: "Montserrat";
            color: $tertiary_color;
            font-family: $main_font;
            font-size: 24px;
+           min-height: 20vh;
        }
        }
 }
@@ -221,11 +235,13 @@ $main_font: "Montserrat";
 @media only screen and (min-width: 992px) {
     .App {
     background-color: $tertiary_color;
+    min-height: 100vh;
     .App-header {
        padding : 17px 100px;
        display: flex;
        justify-content: space-between;
        align-items: center;
+       min-height: 10vh;
        .App-nav {
            display: flex;
            gap: 57px;
@@ -246,6 +262,7 @@ $main_font: "Montserrat";
        }
    }
    .App-main {
+        min-height: 70vh;
        .Main-header {
            height: 223px;
            margin : 17px 100px;
@@ -271,7 +288,7 @@ $main_font: "Montserrat";
            flex-wrap: wrap;
            justify-content: center;
            margin: 50px 100px;
-           padding: 50px;
+           padding: 30px;
            gap: 50px;
            background-color: $bg_color;
            border-radius: 10px;
@@ -295,10 +312,10 @@ $main_font: "Montserrat";
                    font-weight: bold;
                    color: $tertiary_color;
                    position: absolute;
-                   bottom: 5px;
-                   left: 15px;
+                   bottom: 1px;
+                   left: 1px;
                    text-overflow: ellipsis;
-                   width: 250px;
+
                }
            }
        }
@@ -313,6 +330,7 @@ $main_font: "Montserrat";
        color: $tertiary_color;
        font-family: $main_font;
        font-size: 24px;
+       min-height: 20vh;
    }
    }}
 
